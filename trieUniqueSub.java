@@ -61,7 +61,9 @@ public class trieUniqueSub {
     }
     public static void main(String[] args){
         String str = "ababa";
-        insert(str);
+        for (int i=0;i<str.length();i++){
+            insert(str.substring(i));
+        }
         unique(str);
         String key = "abb";
         search(key);
