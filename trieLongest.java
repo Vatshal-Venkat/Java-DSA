@@ -16,7 +16,7 @@ public class trieLongest {
 
     public static void insert(String words){
         Node curr = root;
-        for (int i = 0; i< words.length()-1;i++){
+        for (int i = 0; i< words.length();i++){
             int idx = words.charAt(i) - 'a';
             if (curr.children[idx] == null){
                 curr.children[idx] = new Node();
@@ -65,8 +65,8 @@ public class trieLongest {
 
 
     public static void main(String args[]){
-        String[] words = {"a","ap","app","apply","apple","application","applicant","banana","Ophiocordyceps"};
-        for (int i=0;i<words.length-1;i++){
+        String[] words = {"a","ap","app","appl","apply","apple","application","applicant","banana","ophiocordyceps"};
+        for (int i=0;i<words.length;i++){
             insert(words[i]);
         }
         Longest(root, new StringBuilder(""));
