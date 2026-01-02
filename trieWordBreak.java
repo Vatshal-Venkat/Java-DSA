@@ -94,6 +94,6 @@ public class trieWordBreak {
         System.out.println(Break(key));
 
         String ch = "like";
-        System.out.println(stato(ch));
+        /*System.out.println(stato(ch));*/
     }
 }
